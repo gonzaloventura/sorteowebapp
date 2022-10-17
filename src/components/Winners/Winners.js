@@ -1,4 +1,5 @@
 import React from 'react'
+import './Winners.scss'
 
 const Winners = () => {
   return (
