@@ -1,0 +1,20 @@
+.btn-sortear {
+    margin-top: 40px;
+    padding: 40px 25px;
+    border: 1px solid rgba(235, 51, 72, 0.75);
+    box-shadow: 0px 10px 0px rgba(235, 51, 72, 0.5);
+    border-radius: 50%;
+    background: rgb(235, 51, 72);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: .2s;
+    color: white;
+    font-weight: 700;
+    outline: none;
+
+    &:active {
+        transform: translateY(10PX);
+        box-shadow: 0px 0px 0px rgba(235, 51, 72, 0.5);
+        transition: .2s;
+    }
+}
