@@ -1,12 +1,12 @@
 import './App.css';
 import Button from './components/Button/Button';
-import Winners from './components/Winners/Winners';
+import ListWinners from './components/ListWinners/ListWinners';
 
 function App() {
   return (
     <div className="App"> 
       <h1>Sorteo</h1>
-      <Winners />
+      <ListWinners />
       <Button />
     </div>
   );

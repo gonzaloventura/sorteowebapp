@@ -1,7 +1,15 @@
 .list{
     .winners {
-        font-size: 24px;
+        font-size: 16px;
         font-weight: bold;
         letter-spacing: 10px;
+        list-style-type: none;
+        width: 60%;
+        margin: auto;
+        text-transform: uppercase;
+        .winner {
+            margin-left: -30px;
+            margin-top: 10px;
+        }
     }
 }

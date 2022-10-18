@@ -1,13 +1,14 @@
 import React from 'react'
 import './Winners.scss'
 
-const Winners = () => {
+const Winners = ({data}) => {
   return (
-    <div className='list'>
-        <div className='winners'>
-            <span>GONZALO VENTURA</span>
-        </div>
-    </div>
+    <>
+          {data.map((ganador) => (
+            <li key={ganador} className='winner'>{ganador}</li>
+          ))
+         }
+         </>
   )
 }
 
