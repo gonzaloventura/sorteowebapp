@@ -1,11 +1,12 @@
-import './App.css';
+import './App.scss';
 import Button from './components/Button/Button';
 import ListWinners from './components/ListWinners/ListWinners';
+
 
 function App() {
   return (
     <div className="App"> 
-      <h1>Sorteo</h1>
+      {/* <h1>Sorteo</h1> */}
       <ListWinners />
       <Button />
     </div>

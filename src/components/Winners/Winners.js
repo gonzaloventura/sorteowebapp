@@ -5,10 +5,10 @@ const Winners = ({data}) => {
   return (
     <>
           {data.map((ganador) => (
-            <li key={ganador} className='winner'>{ganador}</li>
+            <div key={ganador} className='winner'>{ganador}</div>
           ))
          }
-         </>
+    </>
   )
 }
 

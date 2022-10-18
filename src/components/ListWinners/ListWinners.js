@@ -3,12 +3,12 @@ import './ListWinners.scss'
 import Winners from '../Winners/Winners'
 
 const ListWinners = () => {
-    const data = ["Gonzalo Ventura", "Gonzalo Ventura", "Gonzalo Ventura", "Gonzalo Ventura", "Gonzalo Ventura", "Gonzalo Ventura", "Gonzalo Ventura"]
+    const data = ["Guillermo Montilla", "Maria Victoria Pagliaricci", "Malcom Azcurra Moriena", "Pablo Auliso", "Santiago Fiandino", "Maria Victoria Anomale", "Leandro Agusti", "Gonzalo Filipuzzi", "Mauricio Di Niro", "Nicolas Marin Moreno y Ana Laura Della Mea", "Gustavo A. Ardanaz", "Cristian Cazorla", "Guillermo José Ruival", "Pablo FERNANDEZ BARRON", "José Ariel Montilla", "Santiago Ardanaz", "Oscar Satorre y Cristian Cazorla", "Marcos Cesar Magnano", "Roberto Hume y Sabrina Pinedo", "Lucia Bolañes"]
   return (
     <div className='list'>
-        <ul className='winners'>
+        <div className='winners'>
             <Winners data={data} />
-        </ul>
+        </div>
     </div>
   )
 }
