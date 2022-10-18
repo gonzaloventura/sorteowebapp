@@ -2,8 +2,12 @@ import React from 'react'
 import './Button.scss'
 
 const Button = () => {
+  const sortear = () => {
+    alert("sorteado");
+  }
+
   return (
-    <button className='btn-sortear'>¡Sortear!</button>
+    <button onClick={sortear} className='btn-sortear'>¡Sortear!</button>
   )
 }
 
