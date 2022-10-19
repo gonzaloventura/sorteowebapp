@@ -1,19 +1,67 @@
+:root {
+	--clr-neon: rgb(43, 154, 245);
+	--clr-white: rgba(255, 255, 255, 1);
+}
+
 .btn-sortear {
+    z-index: 1;
     margin-top: 40px;
-    padding: 40px 25px;
-    border: 1px solid rgba(235, 51, 72, 0.75);
-    box-shadow: 0px 10px 0px rgba(235, 51, 72, 0.5);
+    padding: 40px 20px;
     border-radius: 50%;
-    background: rgb(235, 51, 72);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
     font-weight: 700;
     outline: none;
-    cursor: url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto;
+    cursor: url('../assets/cursor.cur'), auto;
+    font-size: 2em;
+	text-decoration: none;
+	color: var(--clr-neon);
+	border: var(--clr-neon) 2px solid;
+	box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+	position: relative;
+}
 
-    &:active {
-        transform: translateY(10PX);
-        box-shadow: 0px 0px 0px rgba(235, 51, 72, 0.5);
-    }
+.btn-sortear::before {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	background: var(--clr-neon);
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+	filter: blur(1.15em);
+	opacity: 0.7;
+	transition: transform 0.2s linear;
+}
+
+.btn-sortear::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 4em 0.6em var(--clr-neon), 0 0 1em 0.2em var(--clr-white);
+	opacity: 0;
+	background: var(--clr-neon);
+	z-index: -1;
+	transition: opacity 0.2s linear;
+    border-radius: 50%;
+}
+
+.btn-sortear:hover,
+.btn-sortear:focus {
+	color: var(--clr-bg);
+}
+
+.btn-sortear:hover::before,
+.btn-sortear:focus::before {
+	opacity: 1;
+	transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+	transition: transform 0.2s linear;
+}
+
+.btn-sortear:hover::after,
+.btn-sortear:focus::after {
+	opacity: 1;
 }

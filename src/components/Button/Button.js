@@ -3,7 +3,7 @@ import './Button.scss'
 
 const Button = () => {
   const sortear = () => {
-    alert("sorteado");
+    console.log("sorteado");
   }
 
   return (
