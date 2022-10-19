@@ -7,6 +7,7 @@ import Confetti from 'react-confetti'
 
 function App() {
   const [sorteo, setSorteo] = useState("btn");
+  const { width, height } = '100%'
 
   return (
     <>
@@ -21,8 +22,8 @@ function App() {
       <>
       <ListWinners sorteo={sorteo} setSorteo={setSorteo}/>
       <Confetti
-      width={'1920'}
-      height={'1080'}
+      width={width}
+      height={height}
       numberOfPieces={150}
       wind={0.01}
       gravity={0.05}
