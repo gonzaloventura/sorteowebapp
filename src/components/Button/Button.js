@@ -1,9 +1,12 @@
 import React from 'react'
 import './Button.scss'
 
-const Button = () => {
+const Button = ({sorteo, setSorteo}) => {
   const sortear = () => {
-    console.log("sorteado");
+    setSorteo("text");
+    setTimeout(()=>{
+      setSorteo("winners")
+    }, 6000)
   }
 
   return (
