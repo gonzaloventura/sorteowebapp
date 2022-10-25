@@ -3,6 +3,7 @@ import Button from './components/Button/Button';
 import ListWinners from './components/ListWinners/ListWinners';
 import React, {useState} from 'react';
 import Confetti from 'react-confetti'
+import RandomNames from './components/RandomNames/RandomNames';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Button sorteo={sorteo} setSorteo={setSorteo} />
       : 
       sorteo === "text" ? 
-      <h1>LOS GANADORES SON</h1>
+      <RandomNames />
       :
       <>
       <ListWinners sorteo={sorteo} setSorteo={setSorteo}/>
