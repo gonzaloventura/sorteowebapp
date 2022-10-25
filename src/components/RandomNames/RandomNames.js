@@ -1,7 +1,7 @@
 import React from 'react'
 import './RandomNames.scss'
 
-const RandomNames = () => {
+const RandomNames = ({sorteo, setSorteo}) => {
   const bomboOne = ["Guillermo Montilla", 
   "Maria Victoria Pagliaricci", 
   "Malcom Azcurra Moriena", 
@@ -210,7 +210,10 @@ const RandomNames = () => {
   "Valeria Portillo", 
   "Pamela Federici", 
   "Héctor Fernández y Alejandro Toso"];
+
   return (
+    <>
+    {sorteo === "btn" ? 
     <>
     <div className='randomnames'>
       <div className='box'>
@@ -239,6 +242,38 @@ const RandomNames = () => {
       </div>
     </div>
     </>
+    :
+    <>
+    <div className='randomnames speed'>
+      <div className='box'>
+        {bomboOne.map((ganador) => (
+            <li key={ganador}>{ganador}</li>
+          ))
+        }
+      </div>
+      <div className='box'>
+        {bomboTwo.map((ganador) => (
+            <li key={ganador}>{ganador}</li>
+          ))
+        }
+      </div>
+      <div className='box'>
+        {bomboThree.map((ganador) => (
+            <li key={ganador}>{ganador}</li>
+          ))
+        }
+      </div>
+      <div className='box'>
+        {bomboFour.map((ganador) => (
+            <li key={ganador} className='winner'>{ganador}</li>
+          ))
+        }
+      </div>
+    </div>
+    </>
+    }
+    </>
+    
   )
 }
 

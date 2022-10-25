@@ -15,10 +15,13 @@ function App() {
     <div className="App"> 
       {/* <h1>SORTEO</h1> */}
       {sorteo === "btn" ? 
+      <>
+      <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
       <Button sorteo={sorteo} setSorteo={setSorteo} />
+      </>
       : 
       sorteo === "text" ? 
-      <RandomNames />
+      <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
       :
       <>
       <ListWinners sorteo={sorteo} setSorteo={setSorteo}/>
