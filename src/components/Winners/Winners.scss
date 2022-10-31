@@ -11,6 +11,7 @@
         grid-template: "a a a a" auto;
         .winner {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 20px 15px 0px 15px;
@@ -44,3 +45,8 @@
     z-index: 3;
 }
 
+.premio{
+    color: #ffbf1f;
+    font-size: 14px;
+    margin: 12px 0px;
+}
