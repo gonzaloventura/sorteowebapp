@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <div className="App"> 
-      {/* <h1>SORTEO</h1> */}
+      <img className='brand' src={require("./components/assets/images/logo.png")} />
       {sorteo === "btn" ? 
       <>
       <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
