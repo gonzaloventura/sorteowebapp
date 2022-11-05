@@ -8,6 +8,7 @@ import RandomNames from './components/RandomNames/RandomNames';
 
 function App() {
   const [sorteo, setSorteo] = useState("btn");
+  const [premiosSorteados, setPremiosSorteados] = useState(1);
   const { width, height } = '100%'
 
   return (
@@ -24,7 +25,7 @@ function App() {
       <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
       :
       <>
-      <ListWinners sorteo={sorteo} setSorteo={setSorteo}/>
+      <ListWinners sorteo={sorteo} setSorteo={setSorteo} premiosSorteados={premiosSorteados} setPremiosSorteados={setPremiosSorteados} />
       <Confetti
       width={width}
       height={height}
