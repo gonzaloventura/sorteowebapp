@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <div className="App"> 
-      <img className='brand' src={require("./components/assets/images/logo.png")} />
+      <img alt='Logo Tuneur' className='brand' src={require("./components/assets/images/logo.png")} />
       {sorteo === "btn" ? 
       <>
       <RandomNames sorteo={sorteo} setSorteo={setSorteo} />

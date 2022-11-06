@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Winners.scss'
 
 const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
@@ -213,7 +213,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[0].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[0].ganadores.push(ganador)
@@ -222,7 +222,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[1].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[1].ganadores.push(ganador)
@@ -231,7 +231,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[2].ganadores.length < 10) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[2].ganadores.push(ganador)
@@ -242,7 +242,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[3].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[3].ganadores.push(ganador)
@@ -251,7 +251,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[4].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[4].ganadores.push(ganador)
@@ -260,7 +260,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[5].ganadores.length < 10) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[5].ganadores.push(ganador)
@@ -271,7 +271,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[6].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[6].ganadores.push(ganador)
@@ -280,7 +280,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[7].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[7].ganadores.push(ganador)
@@ -289,7 +289,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[8].ganadores.length < 2) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[8].ganadores.push(ganador)
@@ -301,7 +301,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[9].ganadores.length < 1) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[9].ganadores.push(ganador)
