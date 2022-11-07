@@ -53,6 +53,7 @@
 .btn-sortear:hover,
 .btn-sortear:focus {
 	color: var(--clr-bg);
+	z-index: 20;
 }
 
 .btn-sortear:hover::before,

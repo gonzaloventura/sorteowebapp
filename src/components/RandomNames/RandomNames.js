@@ -215,7 +215,9 @@ const RandomNames = ({sorteo, setSorteo}) => {
     <>
     {sorteo === "btn" ? 
     <>
+    <div className='blackblur top'></div>
     <div className='randomnames'>
+      
       <div className='box'>
         {bomboOne.map((ganador) => (
             <li key={ganador}>{ganador}</li>
@@ -241,9 +243,11 @@ const RandomNames = ({sorteo, setSorteo}) => {
         }
       </div>
     </div>
+    <div className='blackblur bottom'></div>
     </>
     :
     <>
+    <div className='blackblur top'></div>
     <div className='randomnames speed'>
       <div className='box'>
         {bomboOne.map((ganador) => (
@@ -270,6 +274,7 @@ const RandomNames = ({sorteo, setSorteo}) => {
         }
       </div>
     </div>
+    <div className='blackblur bottom'></div>
     </>
     }
     </>
