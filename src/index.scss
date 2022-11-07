@@ -8,7 +8,7 @@ body {
   background: -webkit-linear-gradient(to right, #2b2b2c #1e2020);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2b2b2c, #1e2020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  cursor: url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto;
+  cursor: url('./components/assets/cursor.cur'), auto;
 }
 
 code {
@@ -17,5 +17,5 @@ code {
 }
 
 .Background {
-	cursor: url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto;
+	cursor: url('./components/assets/cursor.cur'), auto;
 }

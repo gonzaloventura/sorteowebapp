@@ -1,7 +1,7 @@
 import './App.scss';
 import Button from './components/Button/Button';
 import ListWinners from './components/ListWinners/ListWinners';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Confetti from 'react-confetti'
 import RandomNames from './components/RandomNames/RandomNames';
 
@@ -217,6 +217,14 @@ function App() {
   "Pamela Federici", 
   "Héctor Fernández y Alejandro Toso"];
 
+  useEffect(()=>{
+    localStorage.getItem("etapa") && setPremiosSorteados(Number(localStorage.getItem("etapa")))
+  },[])
+
+  function fullReset(){
+    localStorage.clear();
+  }
+
   return (
     <>
     <div className="App"> 
@@ -225,6 +233,7 @@ function App() {
       <>
       <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
       <Button data={data} sorteo={sorteo} setSorteo={setSorteo} />
+      {premiosSorteados === 4 && <button onClick={fullReset}>Empezar de nuevo</button>}
       </>
       : 
       sorteo === "text" ? 
