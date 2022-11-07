@@ -251,7 +251,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     while (premio[4].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
-      if (ganador == undefined){
+      if (ganador === undefined){
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[4].ganadores.push(ganador)

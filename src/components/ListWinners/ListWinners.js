@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './ListWinners.scss'
 import Winners from '../Winners/Winners';
 import soundButton from "../assets/button.mp3";
@@ -24,44 +24,6 @@ const ListWinners = ({sorteo, setSorteo, premiosSorteados, setPremiosSorteados})
         ganadores: []
       },
       {
-        premio: "SEGUNDO PREMIO",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "SEGUNDO PREMIO",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "SEGUNDO PREMIO",
-        cantidad: 10,
-        ganadores: []
-      },
-      {
-        premio: "TERCER PREMIO",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "TERCER PREMIO",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "TERCER PREMIO",
-        cantidad: 2,
-        ganadores: []
-      },
-      {
-        premio: "PREMIO MAYOR",
-        cantidad: 1,
-        ganadores: []
-      }
-    ];
-
-    const premiosSegundaTanda = [
-      {
         premio: "Auriculares in-ear inalambricos Sony",
         cantidad: 5,
         ganadores: []
@@ -75,12 +37,9 @@ const ListWinners = ({sorteo, setSorteo, premiosSorteados, setPremiosSorteados})
         premio: "BIG BOX- En las nubes (Aventura)",
         cantidad: 10,
         ganadores: []
-      }
-    ];
-
-    const premiosTerceraTanda = [
+      },
       {
-        premio: "Cafetera Nespresso Essenza Mini ",
+        premio: "Cafetera Nespresso Essenza Mini",
         cantidad: 5,
         ganadores: []
       },
@@ -93,16 +52,13 @@ const ListWinners = ({sorteo, setSorteo, premiosSorteados, setPremiosSorteados})
         premio: "Smart TV LED Samsung Dk43 x 5100",
         cantidad: 2,
         ganadores: []
-      }
-    ]
-
-    const premiosCuartaTanda = [
+      },
       {
         premio: "Voucher por USD 7000 para canjear en Full Congress",
-        cantidad: 5,
+        cantidad: 1,
         ganadores: []
       }
-    ]
+    ];
     
     const audio = new Audio(soundButton);
     
