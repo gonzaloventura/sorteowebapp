@@ -233,7 +233,7 @@ function App() {
       <>
       <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
       <Button data={data} sorteo={sorteo} setSorteo={setSorteo} />
-      {premiosSorteados === 4 && <button onClick={fullReset}>Empezar de nuevo</button>}
+      {premiosSorteados > 4 && <button onClick={fullReset}>Empezar de nuevo</button>}
       </>
       : 
       sorteo === "text" ? 
