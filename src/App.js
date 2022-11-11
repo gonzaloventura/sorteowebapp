@@ -218,7 +218,7 @@ function App() {
   "Héctor Fernández y Alejandro Toso"];
 
   useEffect(()=>{
-    localStorage.getItem("etapa") && setPremiosSorteados(Number(localStorage.getItem("etapa")))
+    localStorage.getItem("etapa") && setPremiosSorteados(Number(localStorage.getItem("etapa"))+1)
     console.log("etapa al cargar: ", premiosSorteados)
   },[])
 
