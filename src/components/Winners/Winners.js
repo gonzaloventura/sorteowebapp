@@ -129,7 +129,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
 
   return (
         <>
-          {premiosSorteados === 1 ? 
+          {premiosSorteados === 0 ? 
           premio[0].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -137,7 +137,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
             </div>
           ))
           :
-          premiosSorteados === 2 ?
+          premiosSorteados === 1 ?
           premio[3].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -145,7 +145,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
             </div>
           ))
           :
-          premiosSorteados === 3 ?
+          premiosSorteados === 2 ?
           premio[6].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -161,7 +161,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
           ))
           }
 
-{premiosSorteados === 1 ? 
+{premiosSorteados === 0 ? 
           premio[1].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -169,7 +169,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
             </div>
           ))
           :
-          premiosSorteados === 2 ?
+          premiosSorteados === 1 ?
           premio[4].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -177,7 +177,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
             </div>
           ))
           :
-          premiosSorteados === 3 ?
+          premiosSorteados === 2 ?
           premio[7].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -188,7 +188,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
           console.log("nada")
           }
 
-        {premiosSorteados === 1 ? 
+        {premiosSorteados === 0 ? 
           premio[2].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -196,7 +196,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
             </div>
           ))
           :
-          premiosSorteados === 2 ?
+          premiosSorteados === 1 ?
           premio[5].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
@@ -204,7 +204,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
             </div>
           ))
           :
-          premiosSorteados === 3 ?
+          premiosSorteados === 2 ?
           premio[8].ganadores.map((ganador) => (
             <div key={ganador} className='winner'>
               {ganador}
