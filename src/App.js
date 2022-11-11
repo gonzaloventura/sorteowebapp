@@ -219,6 +219,7 @@ function App() {
 
   useEffect(()=>{
     localStorage.getItem("etapa") && setPremiosSorteados(Number(localStorage.getItem("etapa")))
+    console.log("etapa al cargar: ", premiosSorteados)
   },[])
 
   function fullReset(){

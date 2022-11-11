@@ -214,7 +214,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
           :
           console.log("nada")
           }
-         
+         {console.log(premio)}
     </>
   )
 }
