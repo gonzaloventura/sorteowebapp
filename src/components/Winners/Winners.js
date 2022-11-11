@@ -8,7 +8,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     listado = JSON.parse(localStorage.getItem("data"))
   }
 
-  if (premiosSorteados === 1 ){
+  if (premiosSorteados === 0 ){
     while (premio[0].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
@@ -40,7 +40,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     localStorage.setItem("etapa", 1);
     setPremiosSorteados(1)
   }
-  if (premiosSorteados === 2){
+  if (premiosSorteados === 1){
     while (premio[3].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
@@ -73,7 +73,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     localStorage.setItem("etapa", 2);
     setPremiosSorteados(2)
   }
-  if (premiosSorteados === 3){
+  if (premiosSorteados === 2){
     while (premio[6].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
@@ -106,7 +106,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     setPremiosSorteados(3)
   }
 
-  if (premiosSorteados === 4){
+  if (premiosSorteados === 3){
     while (premio[9].ganadores.length < 1) {
       let r = obtenerValor(0,listado.length)
       let ganador = listado[r];
