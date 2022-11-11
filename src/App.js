@@ -8,7 +8,7 @@ import RandomNames from './components/RandomNames/RandomNames';
 
 function App() {
   const [sorteo, setSorteo] = useState("btn");
-  const [premiosSorteados, setPremiosSorteados] = useState(1);
+  const [premiosSorteados, setPremiosSorteados] = useState(0);
   const { width, height } = '100%'
 
   const data = ["Guillermo Montilla", 
