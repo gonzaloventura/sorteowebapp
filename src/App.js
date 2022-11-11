@@ -224,6 +224,7 @@ function App() {
 
   function fullReset(){
     localStorage.clear();
+    window.location.reload();
   }
 
   return (
