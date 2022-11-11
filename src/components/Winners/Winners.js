@@ -3,7 +3,6 @@ import './Winners.scss'
 
 const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
   let listado = data;
-  localStorage.getItem("etapa") && setPremiosSorteados(Number(localStorage.getItem("etapa")))
 
   if (premiosSorteados > 1){
     listado = JSON.parse(localStorage.getItem("data"))
@@ -39,6 +38,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 1);
+    setPremiosSorteados(1)
   }
   if (premiosSorteados === 2){
     while (premio[3].ganadores.length < 5) {
@@ -71,6 +71,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
 
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 2);
+    setPremiosSorteados(2)
   }
   if (premiosSorteados === 3){
     while (premio[6].ganadores.length < 5) {
@@ -102,6 +103,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 3);
+    setPremiosSorteados(3)
   }
 
   if (premiosSorteados === 4){
@@ -116,6 +118,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 4);
+    setPremiosSorteados(4)
   }
 
     
