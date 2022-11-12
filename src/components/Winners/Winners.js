@@ -47,7 +47,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[3].ganadores.push(ganador)
-      listado.splice(r-1, 1)
+      listado.splice(r-1, 2)
     }
     while (premio[4].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
@@ -56,7 +56,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[4].ganadores.push(ganador)
-      listado.splice(r-1, 1)
+      listado.splice(r-1, 2)
     }
     while (premio[5].ganadores.length < 10) {
       let r = obtenerValor(0,listado.length)
@@ -65,7 +65,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[5].ganadores.push(ganador)
-      listado.splice(r-1, 1)
+      listado.splice(r-1, 2)
     }
 
     localStorage.setItem("data", JSON.stringify(listado));
@@ -79,7 +79,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[6].ganadores.push(ganador)
-      listado.splice(r-1, 1)
+      listado.splice(r-1, 2)
     }
     while (premio[7].ganadores.length < 5) {
       let r = obtenerValor(0,listado.length)
@@ -88,7 +88,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[7].ganadores.push(ganador)
-      listado.splice(r-1, 1)
+      listado.splice(r-1, 2)
     }
     while (premio[8].ganadores.length < 2) {
       let r = obtenerValor(0,listado.length)
@@ -97,7 +97,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[8].ganadores.push(ganador)
-      listado.splice(r-1, 1)
+      listado.splice(r-1, 2)
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 3);
@@ -111,7 +111,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
         ganador = listado[obtenerValor(0,listado.length)]
       }
       premio[9].ganadores.push(ganador)
-      listado.splice(r, 1)
+      listado.splice(r-1, 2)
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 4);
