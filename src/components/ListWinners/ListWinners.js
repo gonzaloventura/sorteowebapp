@@ -8,52 +8,62 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
 
     const premios = [
       {
-        premio: "Reloj watch Smart Band Deportivo",
+        premio: "$70.000",
         cantidad: 5,
         ganadores: []
       },
       {
-        premio: "CargaBank Gadnic 18000 Mah Usb",
+        premio: "$70.000",
         cantidad: 5,
         ganadores: []
       },
       {
-        premio: "BIG BOX- Experiencia Gourmet",
-        cantidad: 10,
-        ganadores: []
-      },
-      {
-        premio: "Auriculares in-ear inalambricos Sony",
+        premio: "$70.000",
         cantidad: 5,
         ganadores: []
       },
       {
-        premio: "BIG BOX- Harmonie (Relax)",
+        premio: "$70.000",
+        cantidad: 3,
+        ganadores: []
+      },
+      {
+        premio: "$70.000",
+        cantidad: 3,
+        ganadores: []
+      },
+      {
+        premio: "$70.000",
+        cantidad: 3,
+        ganadores: []
+      },
+      {
+        premio: "$100.000",
         cantidad: 5,
         ganadores: []
       },
       {
-        premio: "BIG BOX- En las nubes (Aventura)",
-        cantidad: 10,
-        ganadores: []
-      },
-      {
-        premio: "Cafetera Nespresso Essenza Mini",
+        premio: "$100.000",
         cantidad: 5,
         ganadores: []
       },
       {
-        premio: "Tablet lenovo tax k10 10,3 full hd",
+        premio: "$100.000",
         cantidad: 5,
         ganadores: []
       },
       {
-        premio: "Smart TV LED Samsung Dk43 x 5100",
-        cantidad: 2,
+        premio: "$150.000",
+        cantidad: 5,
         ganadores: []
       },
       {
-        premio: "Voucher por USD 7000 para canjear en Full Congress",
+        premio: "$150.000",
+        cantidad: 5,
+        ganadores: []
+      },
+      {
+        premio: "$300.000",
         cantidad: 1,
         ganadores: []
       }
@@ -72,7 +82,7 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
         <div className='winners'>
             <Winners data={data} premio={premios} premiosSorteados={premiosSorteados} setPremiosSorteados={setPremiosSorteados} />
         </div>
-        <button className="btn-reset" onClick={reset}>RESET</button>
+        <button className="btn-sortear" onClick={reset}>Volver</button>
     </div>
   )
 }

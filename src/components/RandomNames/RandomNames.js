@@ -14,7 +14,6 @@ const RandomNames = ({sorteo, setSorteo}) => {
     <>
     {sorteo === "btn" ? 
     <>
-    <div className='blackblur top'></div>
     <div className='randomnames'>
       
       <div className='box'>
@@ -73,7 +72,6 @@ const RandomNames = ({sorteo, setSorteo}) => {
         }
       </div>
     </div>
-    <div className='blackblur bottom'></div>
     </>
     }
     </>
