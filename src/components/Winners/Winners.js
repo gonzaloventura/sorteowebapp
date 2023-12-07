@@ -45,6 +45,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[1].ganadores.push(ganador)
+      guardarGanador(ganador, "$70.000")
       listado.splice(r, 1)
     }
 
@@ -60,6 +61,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
       }
       listado.splice(r, 1)
       premio[2].ganadores.push(ganador)
+      guardarGanador(ganador, "$70.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 3);
@@ -74,6 +76,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[3].ganadores.push(ganador)
+      guardarGanador(ganador, "$70.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 4);
@@ -88,6 +91,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[4].ganadores.push(ganador)
+      guardarGanador(ganador, "$70.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 5);
@@ -102,6 +106,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[5].ganadores.push(ganador)
+      guardarGanador(ganador, "$70.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 6);
@@ -116,6 +121,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[6].ganadores.push(ganador)
+      guardarGanador(ganador, "$100.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 7);
@@ -130,6 +136,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[7].ganadores.push(ganador)
+      guardarGanador(ganador, "$100.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 8);
@@ -144,6 +151,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[8].ganadores.push(ganador)
+      guardarGanador(ganador, "$100.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 9);
@@ -158,6 +166,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[9].ganadores.push(ganador)
+      guardarGanador(ganador, "$150.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 10);
@@ -172,6 +181,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[10].ganadores.push(ganador)
+      guardarGanador(ganador, "$150.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 11);
@@ -186,6 +196,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
         ganador = listado[obtenerValor(0, listado.length)]
       }
       premio[11].ganadores.push(ganador)
+      guardarGanador(ganador, "$300.000")
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 12);
