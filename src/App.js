@@ -27,8 +27,8 @@ function App() {
 
   return (
     <>
-    <div className="App"> 
-      <img alt='Logo' className='brand' src={require("./components/assets/images/logo2.png")} />
+    <div className="App place-content-center"> 
+      {/* <img alt='Logo' className='brand' src={require("./components/assets/images/logo2.png")} /> */}
       {/* <video className='' autoPlay loop muted>
           <source src={logoloop} type='video/quicktime' />
       </video> */}
