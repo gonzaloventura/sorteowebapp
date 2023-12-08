@@ -4,7 +4,7 @@ import ListWinners from './components/ListWinners/ListWinners';
 import React, {useEffect, useState} from 'react';
 import Confetti from 'react-confetti'
 import RandomNames from './components/RandomNames/RandomNames';
-import loop from './components/assets/images/loop.mp4';
+import loop from './components/assets/images/fondo.mp4';
 import logoloop from './components/assets/images/logo.mov';
 
 
