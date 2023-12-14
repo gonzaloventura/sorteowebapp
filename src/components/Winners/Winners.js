@@ -187,7 +187,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
     localStorage.setItem("etapa", 11);
   }
 
-  `/* if (premiosSorteados === 12) {
+  /* if (premiosSorteados === 12) {
     while (premio[11].ganadores.length < 1) {
       let r = obtenerValor(0, listado.length)
       let ganador = listado[r];
@@ -200,7 +200,7 @@ const Winners = ({ data, premio, premiosSorteados, setPremiosSorteados }) => {
     }
     localStorage.setItem("data", JSON.stringify(listado));
     localStorage.setItem("etapa", 12);
-  } */`
+  } */
 
   function obtenerValor(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
