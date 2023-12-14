@@ -36,7 +36,7 @@ function App() {
       <>
       <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
       <div className='flex flex-col m-4'>
-      <p className='text-5xl font-semibold'>Sorteo {premiosSorteados}: { premiosSorteados < 7 ? "$70.000" : (premiosSorteados < 10 ? "$100.000" : premiosSorteados < 12 ? "$150.000" : "$300.000" ) }</p>
+      <p className='text-5xl font-semibold'>Sorteo {premiosSorteados}: { premiosSorteados < 5 ? "$70.000" : (premiosSorteados < 8 ? "$100.000" : premiosSorteados < 10 ? "$150.000" : "$300.000" ) }</p>
       
       {premiosSorteados > 12 ? <button onClick={fullReset}>Empezar de nuevo</button> : <Button data={data} sorteo={sorteo} setSorteo={setSorteo} />}
       </div>
