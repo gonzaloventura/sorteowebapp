@@ -24,17 +24,12 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
       },
       {
         premio: "$70.000",
-        cantidad: 3,
+        cantidad: 5,
         ganadores: []
       },
       {
         premio: "$70.000",
-        cantidad: 3,
-        ganadores: []
-      },
-      {
-        premio: "$70.000",
-        cantidad: 3,
+        cantidad: 4,
         ganadores: []
       },
       {
