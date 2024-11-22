@@ -1,37 +1,50 @@
-.list{
+.list {
     .winners {
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 2px;
         list-style-type: none;
-        // width: 80%;
-        margin: auto;
+        margin: auto 25px;
         text-transform: uppercase;
         display: grid;
-        grid-template: "a a a a a" auto;
-        
-        .winner {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 15px 15px 200px 10px;
-            padding: 40px 20px;
-            font-size: 24px;
-            background-color: rgba(154, 72, 209, 0);
-            transition: 0.1s;
-            color: rgb(226, 226, 226);
-            border: 1px solid rgb(155, 68, 206);
-            border-radius: 25px;
-            &:hover{
-                // transform: scale(1);
-                transition: .2s;
-                // box-shadow: 0px 0px 15px rgba(72, 193, 209, 0.7);
-            }
+        grid-template-columns: repeat(5, 1fr);
+        /* 5 columnas de igual ancho */
+        grid-template-rows: 200px 200px;
+        /* 2 filas de igual altura */
+        gap: 20px;
+        /* Espaciado uniforme entre los elementos */
+        justify-items: center;
+        /* Centrar horizontalmente los elementos */
+        align-items: center;
+        /* Centrar verticalmente los elementos */
+    }
+
+    .winner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* Asegura que ocupe toda la celda */
+        height: 100%;
+        /* Asegura que ocupe toda la celda */
+        font-size: 24px;
+        background-color: rgba(8, 17, 29, 0.5);
+        transition: 0.1s;
+        color: rgb(226, 226, 226);
+        border: 1px solid rgb(42, 181, 236);
+        border-radius: 25px;
+        backdrop-filter: blur(5px) saturate(150%);
+        box-shadow: var(--clr-neon2) 0px 0px 100px;
+
+        &:hover {
+            transition: 0.2s;
         }
-        .not-show {
-            display: none;
-        }
+    }
+
+
+    .not-show {
+        display: none;
     }
 }
 
@@ -47,7 +60,7 @@
 
 }
 
-.premio{
+.premio {
     color: #ffbf1f;
     font-size: 14px;
     margin: 12px 0px;

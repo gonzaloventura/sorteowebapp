@@ -1,10 +1,12 @@
 .randomnames{
     display: grid;
     grid-template: "a a a a" auto;
-    border: rgba(255, 255, 255, 0.212) 2px solid;
-    background-color: rgba(231, 231, 231, 0.055);
+    border: rgba(33, 122, 173, 0.212) 2px solid;
+    background-color: rgba(22, 32, 68, 0.5);
     border-radius: 25px;
-    margin: 50px 0px 20px 0px;
+    margin: 50px 10px 20px 10px;
+    backdrop-filter: blur(5px) saturate(180%);
+    box-shadow: var(--clr-neon2) 0px 0px 100px;
 
     .box {    
         margin: 0px 20px;
@@ -13,7 +15,7 @@
         max-height: 400px;
         overflow: hidden;
         max-width: min-content;
-        color: rgb(233, 201, 231);
+        color: rgb(143, 182, 214);
         
         li{
             font-size: 20px;

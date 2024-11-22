@@ -8,58 +8,23 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
 
     const premios = [
       {
-        premio: "$70.000",
+        premio: "$130.000",
+        cantidad: 10,
+        ganadores: []
+      },
+      {
+        premio: "$130.000",
+        cantidad: 10,
+        ganadores: []
+      },
+      {
+        premio: "$130.000",
         cantidad: 5,
         ganadores: []
       },
       {
-        premio: "$70.000",
+        premio: "$180.000",
         cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$70.000",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$70.000",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$70.000",
-        cantidad: 4,
-        ganadores: []
-      },
-      {
-        premio: "$100.000",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$100.000",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$100.000",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$150.000",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$150.000",
-        cantidad: 5,
-        ganadores: []
-      },
-      {
-        premio: "$300.000",
-        cantidad: 1,
         ganadores: []
       }
     ];
