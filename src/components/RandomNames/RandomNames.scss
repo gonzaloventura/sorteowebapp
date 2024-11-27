@@ -31,8 +31,9 @@
 .speed{
     .box {
         li{
-            animation: ruleta 2s linear;
+            animation: ruleta .7s linear;
             animation-iteration-count: infinite;
+
         }
     }
 }
@@ -42,7 +43,7 @@
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-1227px);
+        transform: translateY(-1300px);
     }
   }
 

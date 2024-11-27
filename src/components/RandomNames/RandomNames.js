@@ -34,12 +34,12 @@ const RandomNames = ({sorteo, setSorteo}) => {
           ))
         }
       </div>
-      <div className='box'>
+      {/* <div className='box'>
         {bomboFour.map((ganador) => (
             <li key={ganador} className='winner'>{ganador}</li>
           ))
         }
-      </div>
+      </div> */}
     </div>
     <div className='blackblur bottom'></div>
     </>
@@ -65,12 +65,12 @@ const RandomNames = ({sorteo, setSorteo}) => {
           ))
         }
       </div>
-      <div className='box'>
+      {/* <div className='box'>
         {bomboFour.map((ganador) => (
             <li key={ganador} className='winner'>{ganador}</li>
           ))
         }
-      </div>
+      </div> */}
     </div>
     </>
     }
