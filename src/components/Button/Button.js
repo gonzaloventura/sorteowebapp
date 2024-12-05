@@ -16,7 +16,7 @@ const Button = ({data, sorteo, setSorteo}) => {
     setTimeout(()=>{
       setSorteo("winners");
       audioSuccess.play();
-    }, 8000)
+    }, 4000)
   }
 
   return (
