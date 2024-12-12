@@ -36,9 +36,11 @@ function App() {
           <>
             <RandomNames sorteo={sorteo} setSorteo={setSorteo} />
             <div className='flex flex-col m-4'>
-              {premiosSorteados < 5 && <p className='text-5xl font-semibold'>Sorteo {premiosSorteados} : {premiosSorteados < 3 ? "$180.000" : (premiosSorteados < 4 ? "$220.000" : premiosSorteados < 5 ? "$300.000" : premiosSorteados < 6 ? "$400.000" : "$550.000")}</p>}
+            {/* {premiosSorteados < 12 && <p className='text-5xl font-semibold'>Sorteo {premiosSorteados}: { premiosSorteados < 3 ? "$130.000" : (premiosSorteados < 6 ? "$180.000" : premiosSorteados < 7 ? "$220.000" :  premiosSorteados < 8 ? "$300.000" : premiosSorteados < 9 ? "$400.000" : "$550.000" ) }</p>} */}
 
-              {premiosSorteados > 6 ? <button onClick={fullReset}>Empezar de nuevo</button> : <Button data={data} sorteo={sorteo} setSorteo={setSorteo} />}
+            {premiosSorteados < 12 && <p className='text-5xl font-semibold'>{premiosSorteados}: { premiosSorteados < 5 ? "TANDA 1" : (premiosSorteados < 9 ? "TANDA 2" : "TANDA 3" ) }</p>}
+
+              {premiosSorteados > 10 ? <button onClick={fullReset}>Empezar de nuevo</button> : <Button data={data} sorteo={sorteo} setSorteo={setSorteo} />}
             </div>
           </>
           :

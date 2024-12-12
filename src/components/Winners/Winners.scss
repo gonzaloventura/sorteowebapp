@@ -19,6 +19,24 @@
         /* Centrar verticalmente los elementos */
     }
 
+    .winners-less {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        list-style-type: none;
+        margin: auto;
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Columnas adaptables entre 200px y un tamaño fraccional */
+        gap: 20px;
+        justify-content: center; /* Centrar horizontalmente el grid */
+        align-items: center;    /* Centrar verticalmente los elementos */
+    }
+    
+    
+    
+
     .winner {
         display: flex;
         flex-direction: column;
@@ -36,6 +54,7 @@
         border-radius: 25px;
         backdrop-filter: blur(5px) saturate(150%);
         box-shadow: var(--clr-neon2) 0px 0px 100px;
+        padding: 10px;
 
         &:hover {
             transition: 0.2s;

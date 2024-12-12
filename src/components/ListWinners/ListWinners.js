@@ -8,6 +8,26 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
 
     const premios = [
       {
+        premio: "$130.000",
+        cantidad: 10,
+        ganadores: []
+      },
+      {
+        premio: "$130.000",
+        cantidad: 10,
+        ganadores: []
+      },
+      {
+        premio: "$130.000",
+        cantidad: 5,
+        ganadores: []
+      },
+      {
+        premio: "$180.000",
+        cantidad: 5,
+        ganadores: []
+      },
+      {
         premio: "$180.000",
         cantidad: 10,
         ganadores: []
@@ -49,7 +69,7 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
     
     return (
     <div className='list'>
-        <div className='winners'>
+        <div className={premiosSorteados < 8 ? 'winners' : 'winners-less'}>
             <Winners data={data} premio={premios} premiosSorteados={premiosSorteados} setPremiosSorteados={setPremiosSorteados} />
         </div>
         <button className="btn-sortear" onClick={reset}>Siguiente</button>
