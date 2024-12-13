@@ -19,7 +19,7 @@
         /* Centrar verticalmente los elementos */
     }
 
-    .winners-less {
+    .winnersSiete {
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 2px;
@@ -27,7 +27,37 @@
         margin: auto;
         text-transform: uppercase;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(7, 1fr);
+        /* Columnas adaptables entre 200px y un tamaño fraccional */
+        gap: 20px;
+        justify-content: center; /* Centrar horizontalmente el grid */
+        align-items: center;    /* Centrar verticalmente los elementos */
+    }
+
+    .winnersDos {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        list-style-type: none;
+        margin: auto;
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        /* Columnas adaptables entre 200px y un tamaño fraccional */
+        gap: 20px;
+        justify-content: center; /* Centrar horizontalmente el grid */
+        align-items: center;    /* Centrar verticalmente los elementos */
+    }
+
+    .winnersUno {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        list-style-type: none;
+        margin: auto;
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
         /* Columnas adaptables entre 200px y un tamaño fraccional */
         gap: 20px;
         justify-content: center; /* Centrar horizontalmente el grid */

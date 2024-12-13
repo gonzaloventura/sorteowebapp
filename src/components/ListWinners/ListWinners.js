@@ -69,7 +69,7 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
     
     return (
     <div className='list'>
-        <div className={premiosSorteados < 8 ? 'winners' : 'winners-less'}>
+        <div className={premiosSorteados < 8 ? 'winners' : premiosSorteados < 9 ? 'winnersSiete' : premiosSorteados < 10 ? 'winnersDos' : 'winnersUno'}>
             <Winners data={data} premio={premios} premiosSorteados={premiosSorteados} setPremiosSorteados={setPremiosSorteados} />
         </div>
         <button className="btn-sortear" onClick={reset}>Siguiente</button>
